@@ -40,7 +40,7 @@ class WaiterActor(forks: Set[Fork]) extends Actor {
 
 case class Fork(number: Int)
 
-abstract class Action
+trait Action
 
 case class TakeFork(philosopher: Philosopher, fork: Fork) extends Action
 
